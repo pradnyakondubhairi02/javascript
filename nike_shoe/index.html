@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .img-fluid{
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 30%;
+    }
+    h1{
+        margin-left: 35%;
+    }
+    button{
+        margin-left: 35%;
+        /* padding: 5px; */
+        padding: 10px 16px;
+        border-radius: 20px;
+        background-color: white;
+        font-weight: bold;
+    }
+    #error{
+        color: red;
+        text-align: center;
+    }
+   
+</style>
+<body>
+    <img src="nice.webp" class="img-fluid">
+    <h1>NIKE shoe</h1>
+    <button onclick="purchase()">Purchase - $149</button>
+    <p id="error"></p>
+
+    <script>
+        
+        let errorPara = document.getElementById("error")
+
+        function purchase()
+        {
+              errorPara.textContent="There is some error occrus"
+        }
+    
+    </script>
+</body>
+</html>
